@@ -1,23 +1,29 @@
 <!doctype html>
 <meta charset="utf-8">
 <link rel="stylesheet" href="../../static/style.css">
-<link href="https://fonts.cdnfonts.com/css/times-new-roman" rel="stylesheet">
-<style>
-  html, * {font-family: "Times New Roman", sans-serif;}
-</style>
-<title>CV — vdkochev.github.io</title>
+<link rel="stylesheet" href="https://fonts.cdnfonts.com/css/times-new-roman">
 
+<title>CV — vdkochev.github.io</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  html, * { font-family: "Times New Roman", sans-serif; }
+  code { font-family: "Times New Roman", sans-serif; font-size: 1rem; }
+  @media (min-width: 768px) { nav h3 { display:none; } }
+</style>
 <body>
-  <div class="container" style="max-width: 1536px;">
+  <div id="root" class="container" style="max-width: 1536px;">
 
     <header class="row">
       <h1>Vladislav D. Kochev</h1>
+      <label for="drawer-control" class="button drawer-toggle col-sm"></label>
     </header>
 
     <div class="row">
       
+      <input type="checkbox" id="drawer-control" class="button drawer">
       <nav class="col-sm-12 col-md-3">
-
+        <h3>Menu</h3>
+        <label for="drawer-control" class="drawer-close"></label>
         
         <ul>
           <a href="../">
@@ -32,12 +38,16 @@
               CV
             </a>
           
+          <div style="text-align: center;">
+            <a class="button small" href="./">English</a>
+            <a class="button small" href="../../CV/">Русский</a>
+          </div>
         </ul>
 
-        <div>
+        <!--<div>
           <a class="button small" href="../../CV/">Русский</a>
           <a class="button small" href="./">English</a>
-        </div>
+        </div>-->
 
       </nav>
 
@@ -54,23 +64,23 @@
 <h4><strong>Affiliation</strong></h4>
 <ul>
 <li><code>07/20 - present</code> Science Project Enginee, National University of Science and Technology MISIS</li>
-<li><code>02/23 - present</code> Research Engineer (part-time), Landau Institute for Theoretical Physics of RAS</li>
+<li><code>02/23 - present</code> Research Engineer (part-time), Landau Institute for Theoretical Physics RAS</li>
 </ul>
 <h4><strong>Education</strong></h4>
 <ul>
 <li><code>09/12 - 06/15</code> Scholar, Lyceum №1 at PNRPU (educational profile of Information Technology)</li>
 <li><p><code>09/15 - 08/19</code> Undergraduate, Perm State University, Department of Physics of Phase Transitions</p>
-<p>Bachelor of Applied Math and Physics</p>
+<p>Bachelor's degree in Applied Math and Physics</p>
 <p>Bachelor thesis: "<em>Interaction of Superparamagnetic Microspheres: Monte Carlo Numerical Simulation</em>"</p>
-<p>Supervisor: Dr.Sc. A. F. Pshenichnikov (ICMM UB RAS)</p>
+<p>Supervisor: ScD A. F. Pshenichnikov, Institute of Continuous Media Mechanics UB RAS</p>
 </li>
 <li><p><code>09/19 - 08/21</code> Graduate, National University of Science and Technology MISiS, Department of Theoretical Physics and Quantum Technologies</p>
-<p>Master of Physics with Honors, Quantum Material Science</p>
+<p>Master's degree in Physics <em>cum laude</em>, Quantum Material Science program</p>
 <p>Master thesis: "<em>Effect of the Size and Shape of Superconducting Granules on the Anisotropy of the Superconducting Transition in Organic Metals</em>"</p>
-<p>Supervisor: Dr.Sc. P. D. Grigoriev (Landau Institute for Theoretical Physics RAS)</p>
+<p>Supervisor: ScD P. D. Grigoriev, Landau Institute for Theoretical Physics RAS</p>
 </li>
 <li><p><code>09/21 - present</code> PhD, National University of Science and Technology MISIS, Department of Theoretical Physics and Quantum Technologies</p>
-<p>Supervisor: Dr.Sc. P. D. Grigoriev (Landau Institute for Theoretical Physics RAS)</p>
+<p>Supervisor: ScD P. D. Grigoriev, Landau Institute for Theoretical Physics RAS</p>
 </li>
 </ul>
 <h4><strong>Teaching</strong></h4>

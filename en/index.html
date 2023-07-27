@@ -1,23 +1,29 @@
 <!doctype html>
 <meta charset="utf-8">
 <link rel="stylesheet" href="../static/style.css">
-<link href="https://fonts.cdnfonts.com/css/times-new-roman" rel="stylesheet">
-<style>
-  html, * {font-family: "Times New Roman", sans-serif;}
-</style>
-<title>Main page — vdkochev.github.io</title>
+<link rel="stylesheet" href="https://fonts.cdnfonts.com/css/times-new-roman">
 
+<title>Main page — vdkochev.github.io</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  html, * { font-family: "Times New Roman", sans-serif; }
+  code { font-family: "Times New Roman", sans-serif; font-size: 1rem; }
+  @media (min-width: 768px) { nav h3 { display:none; } }
+</style>
 <body>
-  <div class="container" style="max-width: 1536px;">
+  <div id="root" class="container" style="max-width: 1536px;">
 
     <header class="row">
       <h1>Vladislav D. Kochev</h1>
+      <label for="drawer-control" class="button drawer-toggle col-sm"></label>
     </header>
 
     <div class="row">
       
+      <input type="checkbox" id="drawer-control" class="button drawer">
       <nav class="col-sm-12 col-md-3">
-
+        <h3>Menu</h3>
+        <label for="drawer-control" class="drawer-close"></label>
         
         <ul>
           <a class="bordered" href="./">
@@ -32,12 +38,16 @@
               CV
             </a>
           
+          <div style="text-align: center;">
+            <a class="button small" href="./">English</a>
+            <a class="button small" href="../">Русский</a>
+          </div>
         </ul>
 
-        <div>
+        <!--<div>
           <a class="button small" href="../">Русский</a>
           <a class="button small" href="./">English</a>
-        </div>
+        </div>-->
 
       </nav>
 
@@ -55,7 +65,7 @@
 
 
   
-  <div style="width: 50%; margin: 0 auto;"><img src="../me.jpg"></div>
+  <div style="max-width: 500px; margin: 0 auto;"><img src="../me.jpg"></div>
   
 
       </main>
