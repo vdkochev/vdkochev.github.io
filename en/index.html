@@ -8,10 +8,33 @@
 <style>
   html, * { font-family: "Times New Roman", sans-serif; }
   code { font-family: "Times New Roman", sans-serif; font-size: 1rem; }
-  @media (min-width: 768px) { nav h3 { display:none; } }
+  .container { max-width: 1320px; }
+  #img { text-align: center; }
+  #img > img { max-width: 100%; }
+  @media screen and (min-width: 768px) { 
+    nav h3 { display:none; } 
+    #img > img { max-width: 540px; } }
 </style>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+   ym(94465966, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/94465966" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
 <body>
-  <div id="root" class="container" style="max-width: 1536px;">
+  <div class="container">
 
     <header class="row">
       <h1>Vladislav D. Kochev</h1>
@@ -43,15 +66,9 @@
             <a class="button small" href="../">Русский</a>
           </div>
         </ul>
-
-        <!--<div>
-          <a class="button small" href="../">Русский</a>
-          <a class="button small" href="./">English</a>
-        </div>-->
-
       </nav>
 
-      <main class="col-sm">
+      <main class="col-sm-12 col-md-9">
         
   
   <p>Science Project Engineer</p>
@@ -65,7 +82,7 @@
 
 
   
-  <div style="max-width: 500px; margin: 0 auto;"><img src="../me.jpg"></div>
+  <div id="img"><img src="../me.jpg"></div>
   
 
       </main>
